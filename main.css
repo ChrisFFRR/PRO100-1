@@ -1,0 +1,184 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+
+#spaceinvaders {
+    position: relative;
+    margin: auto;
+    border: solid yellow;
+    height: 99%;
+    width: 700px;
+    overflow: hidden;
+    background-color: black;
+    
+}
+
+.background {
+    position: absolute;
+   height: 100%;
+}
+
+
+#player-wrap {
+    text-align: center;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    bottom: 2px;
+    
+}
+
+
+.player-1 {
+    display: inline-block;
+    height: 80px;
+    width: 80px; 
+   
+}
+
+.start-text{
+    position: absolute;
+    bottom: 15px;
+    left: 400px;
+    background-color: red;
+    padding: 3px;
+    border-radius: 20%;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    font: bold;
+    display: none;
+
+}
+
+/* adds ready player one text on hover*/
+
+.player-1:hover ~ .start-text{
+    display: block;
+    left: 10px;
+}
+
+
+
+
+
+.invader {
+    position: absolute;
+    animation: move 5s linear infinite;
+   
+}
+@keyframes move {
+    0% {top: 0px}
+    50% {top: 50px;}
+    75% {top: 25px;}
+    100% {top: 0px;}
+    
+}
+
+.invader-1 {
+    left: 0px;
+    height: 100px;
+    padding: 0 50px;
+}
+
+
+
+
+.invader-2 {
+    right: 0px;
+    height: 100px;
+    padding: 0 50px;
+}
+
+.invader-3 {
+    left: 250px;
+    padding: 0 50px;
+    height: 100px;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+
+.homebox {
+    position: absolute;
+    border-radius: 30%;
+    height: 20px;
+    width: 100px;
+
+}
+
+.box-1 {
+    left: 30px;
+    bottom: 200px;
+    background-color: darkviolet;
+}
+
+.box-2 {
+    left: 30px;
+    bottom: 150px;
+    background-color: darkblue;
+}
+
+.box-3 {
+    left: 30px;
+    bottom: 100px;
+    background-color: darkgreen
+}
+
+.box-4 {
+    left: 200px;
+    bottom: 200px;
+    background-color: blueviolet
+}
+
+.box-5 {
+    left: 200px;
+    bottom: 150px;
+    background-color: blue
+}
+
+.box-6 {
+    left: 200px;
+    bottom: 100px;
+    background-color: forestgreen
+}
+
+.box-7 {
+    left: 370px;
+    bottom: 200px;
+    background-color: palevioletred
+}
+
+.box-8 {
+    left: 370px;
+    bottom: 150px;
+    background-color: aquamarine
+}
+
+.box-9 {
+    left: 370px;
+    bottom: 100px;
+    background-color: greenyellow
+}
+
+.box-10 {
+    right: 30px;
+    bottom: 200px;
+    background-color: violet
+}
+
+.box-11 {
+    right: 30px;
+    bottom: 150px;
+    background-color: aqua
+}
+
+.box-12 {
+    right: 30px;
+    bottom: 100px;
+    background-color: greenyellow
+}
